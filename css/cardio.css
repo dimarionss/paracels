@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300, 400, 500, 700);
+
 body {
 	font-family: "Roboto", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
 	font-size: 14px;
@@ -21,6 +22,7 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
 /* Preloader */
 
 .preloader {
@@ -114,7 +116,7 @@ header {
 	width: 100%;
 	color: white;
 	background: rgba(28, 36, 65, 0.93);
-	background: url("../img/header.jpg");
+	background: url("../img/header2.jpg");
 	background-size: cover;
 }
 
@@ -151,15 +153,18 @@ header .typed-cursor {
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 }
-.navbar-brand > img {
+
+.navbar-brand>img {
 	width: 200px;
 }
+
 a {
 	text-decoration: none;
 	color: #b22222;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
+
 /* Navigation Bar ( Navbar ) */
 
 nav.navbar {
@@ -184,13 +189,14 @@ nav.navbar-fixed-top {
 	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05);
 }
 
-nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
+nav.navbar-fixed-top .navbar-nav>li>a:not(.btn) {
 	color: #bbb;
 }
 
 .icon-bar {
 	background: #bbb;
 }
+
 /* Buttons */
 
 .btn {
@@ -271,6 +277,7 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	position: relative;
 	z-index: 1;
 }
+
 /* Sections */
 section {
 	position: relative;
@@ -431,6 +438,7 @@ section {
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
+
 	to {
 		opacity: 0;
 		-webkit-transform: scale(100);
@@ -444,6 +452,7 @@ section {
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
+
 	to {
 		opacity: 0;
 		-webkit-transform: scale(100);
@@ -457,7 +466,7 @@ section {
 
 .service {
 	width: 100%;
-	height: 320px;
+	height: 370px;
 	margin: 80px 0;
 	text-align: center;
 	border: 1px solid #ddd;
@@ -483,7 +492,7 @@ section {
 	transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.service .icon-holder > img.icon {
+.service .icon-holder>img.icon {
 	width: 40px;
 }
 
@@ -500,6 +509,9 @@ section {
 }
 
 .service .description {
+	font-size: 20px;
+	text-transform: uppercase;
+	/* text-align: left; */
 	width: 80%;
 	margin: 0 auto;
 	opacity: 0;
@@ -518,6 +530,7 @@ section {
 }
 
 .team {
+	height: 500px;
 	margin: 80px 0;
 	padding-bottom: 60px;
 	background: white;
@@ -547,6 +560,7 @@ section {
 .team .title {
 	margin: 50px 0;
 }
+
 /* Pricing */
 
 #pricing {
@@ -653,6 +667,7 @@ section {
 	margin-bottom: 60px;
 	color: white;
 }
+
 /* Footer */
 
 footer {
@@ -723,6 +738,7 @@ footer .social-footer li a {
 footer .social-footer li:hover a {
 	color: #b22222;
 }
+
 /* Form Control */
 
 .form-control {
@@ -877,7 +893,7 @@ footer .social-footer li:hover a {
 	transition: background-color 0.3s;
 }
 
-.checkbox input[type="checkbox"]:focus + label:before {
+.checkbox input[type="checkbox"]:focus+label:before {
 	background: rgba(255, 255, 255, 0.2);
 }
 
@@ -901,7 +917,7 @@ footer .social-footer li:hover a {
 	height: 0;
 }
 
-.checkbox input[type="checkbox"]:checked + label:after {
+.checkbox input[type="checkbox"]:checked+label:after {
 	opacity: 1;
 }
 
@@ -998,6 +1014,7 @@ footer .social-footer li:hover a {
 .bold {
 	font-weight: bold;
 }
+
 /* Colors */
 
 .white {
@@ -1032,25 +1049,35 @@ footer .social-footer li:hover a {
 	margin-top: 150px;
 }
 
+.videoblock {
+	margin-top: 30px;
+}
+
 @media (max-width: 992px) {
 	h1 {
 		font-size: 36px;
 	}
+
 	h2 {
 		font-size: 28px;
 	}
+
 	h3 {
 		font-size: 24px;
 	}
+
 	h4 {
 		font-size: 20px;
 	}
+
 	h5 {
 		font-size: 16px;
 	}
+
 	h6 {
 		font-size: 12px;
 	}
+
 	.section {
 		padding: 30px 0;
 	}
@@ -1068,9 +1095,11 @@ footer .social-footer li:hover a {
 	.pricing {
 		margin-bottom: 30px;
 	}
+
 	.pricings .pricing .info-icon {
 		display: none;
 	}
+
 	.pricings .pricing .box-main,
 	.pricings .pricing .box-second {
 		left: 0;
@@ -1079,23 +1108,28 @@ footer .social-footer li:hover a {
 		text-align: left;
 		background: #b22222;
 	}
+
 	.pricings .pricing .box-main.active {
 		background: #b22222;
 		-webkit-transform: translateX(0%);
 		-ms-transform: translateX(0%);
 		transform: translateX(0%);
 	}
+
 	.pricings .pricing .box-second {
 		position: relative;
 		opacity: 1;
 	}
+
 	.popup-form {
 		width: 100%;
 		margin: 60px auto;
 	}
+
 	.modal {
 		padding: 0 10px !important;
 	}
+
 	.popup-form .form-control:not(.dropdown):focus {
 		position: relative;
 		padding-right: 30px;
@@ -1107,6 +1141,7 @@ footer .social-footer li:hover a {
 	header .typed-cursor {
 		display: none;
 	}
+
 	.pricings .pricing .box-second {
 		padding-top: 0;
 	}
